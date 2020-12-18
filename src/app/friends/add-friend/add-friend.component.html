@@ -1,0 +1,17 @@
+<h3>Add Friend</h3>
+<div [hidden]="submitted" style="width: 300px;">
+  <forms (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">Nama</label>
+      <input type="text" class="form-control" id="name" required [(ngModel)] ="friend.name" name="name">
+    </div>
+
+    <button type="submit" class="btn btn-success">Submit</button>
+  </forms>
+
+</div>
+
+<div [hidden]="!submitted">
+  <h4>Friend Added!</h4>
+  <button class="btn btn-success" (click)="newFriend"()>Add</button>
+</div>

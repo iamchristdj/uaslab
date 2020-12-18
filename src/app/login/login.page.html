@@ -1,0 +1,22 @@
+<ion-content>
+  <h2>Login</h2><br><br>
+  <form #form="ngForm" (ngSubmit)="loginUser(form)">
+    <div>
+      <ion-item>
+        <ion-input name="email" type="email" placeholder="your@gmail.com" ngModel required>
+        </ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input name="password" type="password" placeholder="password" ngModel required>
+        </ion-input>
+      </ion-item>
+    </div><br>
+    <div style="text-align: center; margin: auto;">
+      <ion-button type="submit" [disabled]="form.invalid">Sign In</ion-button>
+    </div>
+  </form><br>
+  <div style="text-align: center; margin: auto;">
+    <ion-button (click)="goToReset()">Forget Password</ion-button>
+    <h6 (click)="goToSignUp()">Don't have account ? Register here!</h6>
+  </div>
+</ion-content>

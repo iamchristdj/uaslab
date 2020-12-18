@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Register</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form #form="ngForm" (ngSubmit)="signUpUser(form)">
+    <div>
+      <ion-item>
+        <ion-input name="fname" type="text" placeholder="First Name" ngModel required>
+        </ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input name="lname" type="text" placeholder="Last Name" ngModel required>
+        </ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input name="email" type="email" placeholder="your@gmail.com" ngModel required>
+        </ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input name="password" type="password" placeholder="Password" ngModel required>
+        </ion-input>
+      </ion-item>
+    </div>
+    <div style="text-align: center; margin: auto;">
+      <ion-button type="submit" [disabled]="form.invalid">Sign Up</ion-button>
+    </div>
+  </form>
+</ion-content>

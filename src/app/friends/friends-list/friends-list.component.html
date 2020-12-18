@@ -1,0 +1,7 @@
+<h1>Friends</h1>
+<div *ngFor="let friend of friends" style="width: 300px">
+  <app-friend-details [friend]='friend'></app-friend-details>
+</div>
+<div style="margin-top: 20px;">
+  <button type="button" class="button btn-danger" (click)='deleteFriends()'>Delete All</button>
+</div>

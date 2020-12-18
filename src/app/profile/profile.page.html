@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-img src="../../assets/icon" width="50%" height="50%"></ion-img><br/>
+  
+  <div style="text-align: center; margin: auto;">
+    <ion-button (click)="logOut()">Log out</ion-button>
+  </div>
+  
+  <ion-text>
+    <h5>Nama: Christian Djaidiguna</h5>
+  </ion-text>
+  <ion-text><h6>NIM: 00000015836</h6></ion-text>
+
+
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button  tab="friends">
+        <ion-icon name="calendar"></ion-icon>
+        <ion-label>Friend List</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button  routerLink="/home" tab="map">
+        <ion-icon name="map"></ion-icon>
+        <ion-label>Maps</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button  routerLink="/profile" tab="profile">
+        <ion-icon name="information-circle"></ion-icon>
+        <ion-label>Profile</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-content>

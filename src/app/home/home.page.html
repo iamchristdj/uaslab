@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Home
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button  tab="friends">
+        <ion-icon name="calendar"></ion-icon>
+        <ion-label>Friend List</ion-label>
+      </ion-tab-button>
+
+
+
+      <ion-tab-button  routerLink="/home" tab="map">
+        <ion-icon name="map"></ion-icon>
+        <ion-label>Maps</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button routerLink="/profile" tab="profile">
+        <ion-icon name="information-circle"></ion-icon>
+        <ion-label>Profile</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-content>
